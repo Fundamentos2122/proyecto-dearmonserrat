@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Configuración de la cuenta</title>
+</head>
+<body>
+    <section>
+        <h1>CONFIGURACIÓN DE LA CUENTA</h1>
+        <div class="conf-op">
+            <a href="profile_settings.html">Perfil</a>
+            <a class="selected" href="account_settings.html">Cuenta</a>
+            <a href="support.html">Ayuda</a>
+            <a href="profile.html">Salir</a>
+            <a href="login.html">Cerrar sesión</a>
+        </div>
+        <nav class="outline">
+             <!--EJEMPLO DE NOMBRE DE USUARIO Y DATOS DE PERFIL PARA SU EDICIÓN-->
+             <form class="conf-form">
+                 <div class="desc-confprofile">
+                    <label for="email">Editar correo electrónico</label>
+                    <input type="text" name="email" autocomplete="off">
+                    <br>
+                    <label for="password">Editar contraseña</label>
+                    <input type="password" name="password">
+                    <br>
+                    <label for="tel-num">Agregar/editar un número de teléfono</label>
+                    <input type="text" name="tel-num" autocomplete="off">
+                    <br>
+                    <label for="birthday">Agregar/editar fecha de nacimiento</label>
+                    <input type="date" name="birthday">
+                    <br>
+                    <button>Guardar</button>
+                 </div>
+             </form>
+        </nav>
+        <br>
+        <a id="adminPath" href="admin_access.html">Configuración avanzada</a>
+    </section>
+</body>
+</html>

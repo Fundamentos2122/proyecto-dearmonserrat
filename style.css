@@ -1,0 +1,546 @@
+* {
+    box-sizing: border-box;
+}
+
+/*FUENTE PARA EL TÍTULO*/
+@font-face {
+    font-family: Roboto_Mono;
+    src: url(Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+
+/*FUENTE PARA TEXTO GENERAL*/
+@font-face {
+    font-family: Roboto_Slab;
+    src: url(Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+/*TEXTO PARA TEXTO INTRODUDIDO POR USUARIO*/
+@font-face {
+    font-family: Work_Sans;
+    src: url(Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+html, body, div, p, ul, ol {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(43, 43, 70);
+    color: white;
+}
+
+body[class="sign-login"]{
+    background-color: rgb(43, 43, 70);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+body a {
+    color: orange;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: orangered;
+}
+
+span[class="p-name"] {
+    font-family: "Roboto_Mono";
+    font-size: 0.75em;
+    margin-left: 2.15em;
+}
+
+img[class="p-icon"] {
+    position: absolute;
+    margin-left: 2px;
+    width: 22px;
+}
+
+a .p-name {
+    color: white;
+}
+
+.header {
+    font-family: "Roboto_Slab";
+    color: white;
+    padding: 2em;
+}
+
+.title {
+    font-family: "Roboto_Mono";
+    font-size: 3em;
+}
+
+form[class="sign"] input {
+    font-family: "Roboto_Mono";
+    background-color: transparent;
+    color: white;
+}
+
+
+form[class="login"] input {
+    font-family: "Roboto_Mono";
+    background-color: transparent;
+    color: white;
+}
+
+form button {
+    font-family: "Roboto_Mono";
+    background-color: orange;
+    color: black;
+    text-align: center;
+    border-radius: 1em;
+}
+
+form button:hover {
+    background-color: orangered;
+    border: 2px solid black;
+}
+
+.form-reset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-reset input {
+    font-family: "Roboto_Slab";
+    background-color: transparent;
+    color: white;
+    width: 40%;
+}
+
+.form-reset button{
+    margin-bottom: 1em;
+}
+
+.pteam-msg div {
+    background-color: rgb(76, 79, 105);
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+h4 {
+    font-family: "Roboto_Mono";
+    text-align: center;
+}
+
+h6 {
+    font-family: "Work_Sans";
+    font-size: 9px;
+    color: rgb(247, 176, 45);
+    text-align: center;
+}
+
+form[class="form-search"] input {
+    background-color: white;
+    font-family: "Roboto_Slab";
+    font-size: 1.5em;
+    width: 50%;
+    margin-left: 1em;
+    margin-top: 0.75em;
+    position: absolute;
+}
+
+span[class="msg-desc"] {
+    font-family: "Roboto_Slab";
+    position: absolute;
+    font-size: 3em;
+    text-align: left;
+    left: 0.25em;
+    bottom: 0.5em;
+}
+
+img[class="pumpkin-icon"] {
+    position: absolute;
+    bottom: 0;
+    right: 0.5em;
+    width: 250px;
+    margin: 10px auto 0.25px;
+}
+
+h4[class="pumpkin-icon"] {
+    font-family: "Roboto_Mono";
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 0.5em;
+    right: 5em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    margin-top: 1em;
+}
+
+.navbar a {
+    /*color: orange;*/ /*Definido de forma global en "body a"*/
+    font-family: "Roboto_Slab";
+    font-size: 12.5px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5em;
+    margin-right: 0.75em;
+}
+
+.navbar a:hover {
+    background-color: orange;
+    color: black;
+    border-radius: 1.5em;
+}
+
+h1 {
+    font-family: "Roboto_Slab";
+    text-decoration: underline;
+    position: relative;
+    display: flex;
+    /*justify-content: end;*/
+    margin-left: 0.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.selected {
+    background-color: orange;
+    color: black;
+    border-radius: 3em;
+}
+
+.outline {
+    margin: 0;
+    margin-top: 0.5em;
+    border: 1px solid rgb(33, 33, 34);
+}
+
+.posts-area {
+    background-color: rgb(218, 216, 233);
+}
+
+.posts-area p {
+    color: black;
+    padding: 2em;
+    font-family: "Work_Sans";
+    text-align: justify;
+}
+
+/*CÓDIGO PARA EJEMPLO FIJO, NO FUNCIONAL*/
+.pr-test {
+ display: flex;
+ align-items: center;
+}
+
+.profile-data {
+    flex-direction: column;
+}
+
+/*VENTANA "NOTIFICACIONES (INICIO)*/
+#noti-title {
+    color: orange;
+}
+
+.noti-sec p {
+    background-color: rgb(218, 216, 233);
+    color: black;
+    font-family: "Work_Sans";
+    text-align: justify;
+}
+
+.noti-sec p:hover {
+    background-color: rgb(168, 166, 185);
+}
+
+#desc-notiend {
+    font-family: "Roboto_Mono";
+    color: gray;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+/*(FIN)*/
+
+/*VENTANA "PERFIL DE USUARIO" (INICIO)*/
+.p-username {
+    font-size: 30px;
+    margin-left: 0;
+    text-align: justify;
+    width: 75%;
+}
+
+.desc-biography {
+    color: gray;
+    margin-left: 0.75px;
+}
+
+.p-biography {
+    background-color: rgb(107, 107, 117);
+    color: black;
+    font-size: 15px;
+    margin-left: 0.75px;
+    padding: 2em;
+    text-align: justify;
+    width: 75%;
+}
+
+/*(FIN)*/
+
+.profile-picture {
+    width: 20%;
+    border-radius: 5em;
+    margin: 1em;
+}
+
+section p {
+    font-family: "Roboto_Slab";
+    margin: 1em;  
+}
+
+.posts-area img {
+    padding: 2em;
+    width: 100%;
+    margin: 10px auto 10px;
+}
+
+.conf-icon {
+    position: absolute;
+    width: 25px;
+    right: 0.5em;
+    top: 2.25em;
+}
+
+.conf-icon:hover {
+    background-color: orange;
+    width: 27px;
+    border-radius: 4em;
+}
+
+/*Ventana "configuración"*/
+.conf-op a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 0.5em;
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.conf-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.conf-form div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.conf-form label {
+    font-family: "Roboto_Mono";
+}
+
+p[class="profile-picture"] {
+    font-family: "Roboto_Mono";
+    padding: 1em;
+    color: gray;
+}
+
+.desc-confprofile {
+    padding: 1em;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc-confprofile input {
+    width: 100%;
+}
+
+.desc-confprofile textarea {
+    width: 100%;
+}
+
+.desc-confprofile button {
+    width: 70px;
+}
+
+input[type="date"] {
+    width: 29%;
+}
+
+/*VENTANA DE AYUDA (INICIO)*/
+#support-title {
+    justify-content: end;
+    margin-right: 1em;
+}
+
+.support-links {
+    background-color: rgb(218, 216, 233);
+    text-align: left;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.support-links a {
+    color:rgb(33, 33, 34);
+    font-family: "Roboto_Mono";
+}
+
+.support-links a:hover {
+    color: rgb(38, 72, 184);
+}
+
+h2 {
+    font-family: "Roboto_Slab";
+    text-align: center;
+    margin-top: 0.25em;
+    right: 1em;
+    left: 1em;
+}
+
+h5 {
+    font-family: "Roboto_Mono";
+    text-align: center;
+    color: orange;
+    margin: 0;
+    margin-bottom: 0.25em;
+    right: 1em;
+    left: 1em;
+}
+
+.support-msg {
+    background-color: rgb(255, 222, 161);
+    /*display: flex;*/
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.support-icon {
+    position: absolute;
+    width: 230px;
+    right: 0.25em;
+    top: 3.75em;
+    margin: 10px auto 10px;
+}
+
+.help-request {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.help-request button {
+    border: 0;
+}
+
+.help-request button:hover {
+    background-color: rgb(139, 185, 79);
+}
+/*(FIN)*/
+
+/*CÓDIGO: VISTA ADMINISTRADOR (INICIO)*/
+/*CÓDIGO PARA LINK QUE APARECE EN LA VENTANA DE CONF. DE LA CUENTA*/
+#adminPath {
+    font-family: "Roboto_Slab";
+    position: absolute;
+    right: 1em;
+}
+
+.h-admin {
+    font-family: "Roboto_Slab";
+    color: orange;
+    text-align: center;
+    margin: 1em;
+}
+
+.adminPath {
+    font-family: "Roboto_Slab";
+    color: white;
+}
+
+/*CÓDIGO PARA FORMULARIO DE INGRESO A LA VISTA DE ADMINISTRADOR*/
+.f-admin {
+    text-align: center;
+}
+
+.f-admin label {
+    font-family: "Roboto_Mono";
+    color: gray;
+}
+
+.f-admin input {
+    background-color: transparent;
+    font-family: "Roboto_Mono";
+    color: white;
+}
+
+.f-admin button {
+    margin-bottom: 1em;
+}
+
+.f-admin img {
+    width: 200px;
+    margin-bottom: 0.75em;
+}
+
+#deleteAccount {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    text-align: center;
+    font-family: "Roboto_Slab";
+    font-size: 12.5px;
+    color: orange;
+    text-decoration: none;
+}
+
+#deleteAccount:hover {
+    color: red;
+}
+/*(FIN)*/
+
+/*VISTA ADMINISTRADOR*/
+
+.adview {
+    background-color: rgb(98, 98, 116);
+}
+
+.admin-nav a {
+    font-family: "Roboto_Mono";
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.75em 0.75em;
+    margin-top: 0.75em;
+}
+
+.admin-nav a:hover {
+    background-color: rgba(255, 206, 45, 0.767);
+    color: rgb(219, 88, 0);
+    border-radius: 3em;
+}
+
+.inbox p {
+    font-family: "Work_Sans";
+    background-color: antiquewhite;
+    color: black;
+    padding: 1em;
+}
+
+.inbox p:hover {
+    background-color: rgb(231, 185, 125);
+}
+
+.inbox a {
+    font-family: "Roboto_Mono";
+    font-size: 12.5px;
+    text-decoration: none;
+    margin-bottom: 0.75em;
+    padding: 1em;
+}

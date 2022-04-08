@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Configuración del perfil</title>
+</head>
+<body>
+    <section>
+        <h1>CONFIGURACIÓN DEL PERFIL</h1>
+        <div class="conf-op">
+            <a class="selected" href="profile_settings.html">Perfil</a>
+            <a href="account_settings.html">Cuenta</a>
+            <a href="support.html">Ayuda</a>
+            <a href="profile.html">Salir</a>
+            <a href="login.html">Cerrar sesión</a>
+        </div>
+        <nav class="outline">
+             <!--EJEMPLO DE NOMBRE DE USUARIO Y DATOS DE PERFIL PARA SU EDICIÓN-->
+             <form class="conf-form">
+                <img class="profile-picture" src="http:\\picsum.photos\600" alt="">
+
+                 <div class="desc-confprofile">
+                    <label for="username">Editar nombre de usuario</label>
+                    <br>
+                    <input type="text" name="username" autocomplete="off">
+
+                    <br><br>
+                    
+                     <label for="user-information">Editar información del perfil</label>
+                     <br>
+                    <!--<input type="text" name="user-information" autocomplete="off">-->
+                    <textarea name="user-information" cols="50" rows="10"></textarea>
+
+                    <br>
+
+                    <button>Guardar</button>
+                 </div>
+             </form>
+        </nav>
+    </section>
+</body>
+</html>
